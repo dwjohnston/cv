@@ -1,0 +1,21 @@
+var HTMLToPDF = require ('html5-to-pdf')
+var htmlToPDF = new HTMLToPDF ({
+  inputPath: './a4.html',
+  outputPath: './ouput25.pdf',
+  include: [
+    {
+      "type": "css",
+      "filePath": "./a4.css"
+    }
+
+  ],
+
+  options: {
+      marginsType: 1
+
+    }
+});
+
+htmlToPDF.build ((err) => {
+  console.log(err);
+});
