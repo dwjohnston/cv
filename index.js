@@ -6,6 +6,10 @@ var htmlToPDF = new HTMLToPDF ({
     {
       "type": "css",
       "filePath": "./a4.css"
+    },
+    {
+      "type": "js",
+      "filePath": "./d3.d3"
     }
 
   ],

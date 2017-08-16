@@ -4,12 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
+    "start": "webpack --config webpack.config.js",
     "publish-pdf": "node --harmony index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "html5-to-pdf": "^2.2.4"
+    "d3": "^4.10.0",
+    "html5-to-pdf": "^2.2.4",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "expose-loader": "^0.7.3",
+    "style-loader": "^0.18.2"
   }
 }

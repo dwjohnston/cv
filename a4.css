@@ -61,3 +61,13 @@ footer {
 div.body {
   flex: 1 0 auto;
 }
+
+
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orange;
+}
