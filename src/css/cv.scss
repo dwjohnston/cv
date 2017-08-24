@@ -1,3 +1,20 @@
 .page-inner {
-  color: blue;
+
+}
+
+div.body {
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: stretch;
+
+}
+
+.column {
+  border: solid 1px black;
+  flex: 1 0 40%;
+}
+
+section {
+  border: solid 1px black;
 }
