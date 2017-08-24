@@ -1,8 +1,16 @@
+
 module.exports = {
-  entry: './entry.js',
-  output: {
-    filename: 'bundle.js'
-  },
+
+context: __dirname,
+  	entry: "./app.js",
+  devServer: {
+		contentBase: [
+			"./src/assets",
+			"./src/css",
+		]
+	},
+
+
   module: {
     loaders:[
       {
@@ -12,8 +20,18 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.scss/,
+        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   },
-  target: "web"
+  target: "web",
+
+
 };

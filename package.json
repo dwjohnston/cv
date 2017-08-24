@@ -2,9 +2,9 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --watch-content-base --open",
     "publish-pdf": "node --harmony index.js"
   },
   "author": "",
@@ -19,6 +19,13 @@
     "babel-loader": "^7.1.1",
     "css-loader": "^0.28.4",
     "expose-loader": "^0.7.3",
-    "style-loader": "^0.18.2"
+    "html-loader": "^0.5.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^1.15.0",
+      "open": "0.0.5",
+
+    "webpack-dev-server": "^1.16.5"
   }
 }
