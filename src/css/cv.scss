@@ -120,7 +120,7 @@ section {
     margin: 0.3em 0;
   }
 
-  padding-left: 1em;
+  padding-left: 0.4em;
   display: flex;
   flex-flow: row wrap;
 
@@ -132,6 +132,14 @@ section {
     padding: 0;
     margin: 0;
 
+
+    &:nth-child(odd) {
+      flex: 1 0 55%;
+    }
+
+    &:nth-child(even) {
+      flex: 0 0 40%;
+    }
 
   }
   }

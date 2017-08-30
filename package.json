@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --watch-content-base --open",
-    "publish-html": "webpack && copyfiles -f ./src/assets/index.html ./dist ",
-    "publish-pdf": "node --harmony publish.js "
+    "dev": "webpack-dev-server --watch-content-base --open",                      //start dev server
+    "publish-html": "webpack && copyfiles -f ./src/assets/index.html ./dist ",    //publish to html
+    "publish-pdf": "npm run publish-html && node --harmony publish.js "           //publish to pdf
   },
   "author": "",
   "license": "ISC",
