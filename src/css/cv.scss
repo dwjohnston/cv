@@ -1,5 +1,63 @@
+@import "a4";
+@import "images";
+@import "typography";
+@import "lists";
+
 .page-inner {
 
+}
+
+
+.page-inner {
+  //border: solid 1px black;
+  margin: 1em;
+
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+header {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+
+  padding: 1em;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+
+  padding: 1em;
+
+  display: flex;
+  justify-content: space-between;
+
+
+  .about {
+    flex: 0 0 20em;
+  }
+
+  .github {
+
+
+    p {
+      margin-top: 1em;
+    }
+  }
+
+}
+
+div.body {
+  flex: 1 0 auto;
 }
 
 div.body {
@@ -11,10 +69,109 @@ div.body {
 }
 
 .column {
-  border: solid 1px black;
   flex: 1 0 40%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  &.column-left {
+    flex: 0 0 40%;
+
+    section {
+      margin-left: 0;
+    }
+  }
+
+  &.column-right {
+
+    section {
+      margin-right: 0;
+    }
+  }
+
+  section {
+    flex: 0 0 auto;
+
+  }
+  section:last-child{
+    flex: 1 0 auto;
+  }
+
 }
 
 section {
   border: solid 1px black;
+
+  padding: 0.5em;
+
+  margin: 0.5em;
+
+
+
+
+
 }
+
+
+#skill-set {
+  //Style inner lists
+&>div {
+
+  h3 {
+    margin: 0.3em 0;
+  }
+
+  padding-left: 1em;
+  display: flex;
+  flex-flow: row wrap;
+
+  section {
+
+    flex: 1 0 40%;
+
+    border: none;
+    padding: 0;
+    margin: 0;
+
+
+  }
+  }
+
+}
+
+#education {
+
+  li {
+    list-style-type: none;
+    margin: 0.5em 0;
+  }
+}
+
+#experience {
+  li {
+    margin: 0.2em;
+  }
+
+  h3 {
+    margin-top: 0.4em;
+  }
+
+  .experience-job-title {
+    //font-style: italic;
+    margin-left: 0.6em;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .experience-time-period {
+    font-size: 0.9em;
+  }
+}
+
+
+
+  table.contact-details td:first-child {
+
+    padding-right:1em;
+    vertical-align: middle;
+
+  }

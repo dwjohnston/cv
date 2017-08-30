@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+@page {
+  size: A4;
+}
+
+.page{
+  box-sizing: border-box;
+
+  height: 267mm;
+  width: 180mm;
+  padding: 0;
+
+  border: dashed 1px black;
+  margin: 10mm 15mm;
+  page-break-after: always;
+
+}
+
+.page:last-child {
+    page-break-after: avoid;
+}
+
+
+.page {
+
+  display: flex;
+  flex-flow: column nowrap;
+
+}

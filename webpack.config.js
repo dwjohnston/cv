@@ -1,8 +1,18 @@
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+
 
 module.exports = {
 
 context: __dirname,
   	entry: "./app.js",
+
+    output: {
+      path: __dirname + "/dist",
+      filename: "bundle.js",
+    },
+
+
   devServer: {
 		contentBase: [
 			"./src/assets",
@@ -12,26 +22,42 @@ context: __dirname,
 
 
   module: {
-    loaders:[
-      {
-        test: /\.js[x]?$/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      },
-      {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
-      },
+		loaders: [
+			{ test: /\.scss$/, use: ExtractTextPlugin.extract({
+				fallback: "style-loader",
+				use: [{
+                loader: "css-loader", options: {
+                    sourceMap: true
+                }
+            }, {
+                loader: "sass-loader", options: {
+                    sourceMap: true
+                }
+            }],
+				publicPath: "./"
+			}) },
+
+
       {
         test: /\.html$/,
         loader: 'html-loader'
-      }
-    ]
-  },
+      },
+
+			{ test: /\.png$/, loader: "file-loader" }
+		]
+	},
+
+	devtool: "source-map",
+
   target: "web",
+
+  plugins: [
+  new ExtractTextPlugin({
+    filename: "./style.css",
+    disable: false,
+    allChunks: true
+  })],
+
 
 
 };
