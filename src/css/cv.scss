@@ -19,12 +19,22 @@
   justify-content: space-between;
 }
 
+
+header, footer, section {
+    padding: 1em;
+}
+
+
+section:last-of-type {
+  flex: 1 0 auto;
+}
+
 header {
   border-width: 1px;
   border-color: black;
   border-style: solid;
 
-  padding: 1em;
+
 
 
   display: flex;
@@ -36,7 +46,6 @@ footer {
   border-color: black;
   border-style: solid;
 
-  padding: 1em;
 
   display: flex;
   justify-content: space-between;
@@ -58,14 +67,23 @@ footer {
 
 div.body {
   flex: 1 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 div.body {
+
+
+&> section {
+  margin: 0.5em 0;
+}
+
+}
+
+.columns {
   display: flex;
   flex-flow: row nowrap;
-
-  align-items: stretch;
-
+    align-items: stretch;
 }
 
 .column {
@@ -74,7 +92,7 @@ div.body {
   flex-flow: column nowrap;
 
   &.column-left {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
 
     section {
       margin-left: 0;
@@ -101,12 +119,8 @@ div.body {
 section {
   border: solid 1px black;
 
-  padding: 0.5em;
 
   margin: 0.5em;
-
-
-
 
 
 }
@@ -130,7 +144,7 @@ section {
 
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
 
 
     &:nth-child(odd) {
@@ -177,9 +191,16 @@ section {
 
 
 
-  table.contact-details td:first-child {
+  table.contact-details {
+
+    tr {
+      margin: 2em 0;
+    }
+
+    td:first-child {
 
     padding-right:1em;
     vertical-align: middle;
 
   }
+}
