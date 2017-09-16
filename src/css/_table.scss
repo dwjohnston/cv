@@ -1,0 +1,17 @@
+
+table.contact-details {
+
+  margin-right: 1.5em;
+
+  td{
+
+    padding: 0.25em 0;
+
+    &:first-child {
+
+      padding-right:1em;
+      vertical-align: middle;
+    }
+  }
+
+}

@@ -2,6 +2,8 @@
 @import "images";
 @import "typography";
 @import "lists";
+@import "table";
+@import "layout";
 
 .page-inner {
 
@@ -55,62 +57,6 @@ footer {
   }
 
 }
-
-div.body {
-  flex: 1 0 auto;
-}
-
-div.body {
-  display: flex;
-  flex-flow: row nowrap;
-
-  align-items: stretch;
-
-}
-
-.column {
-  flex: 1 0 40%;
-  display: flex;
-  flex-flow: column nowrap;
-
-  &.column-left {
-    flex: 0 0 40%;
-
-    section {
-      margin-left: 0;
-    }
-  }
-
-  &.column-right {
-
-    section {
-      margin-right: 0;
-    }
-  }
-
-  section {
-    flex: 0 0 auto;
-
-  }
-  section:last-child{
-    flex: 1 0 auto;
-  }
-
-}
-
-section {
-  border: solid 1px black;
-
-  padding: 0.5em;
-
-  margin: 0.5em;
-
-
-
-
-
-}
-
 
 #skill-set {
   //Style inner lists
@@ -174,12 +120,3 @@ section {
     font-size: 0.9em;
   }
 }
-
-
-
-  table.contact-details td:first-child {
-
-    padding-right:1em;
-    vertical-align: middle;
-
-  }

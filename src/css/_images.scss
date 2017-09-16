@@ -1,8 +1,7 @@
 .icon {
 
-  width: 1.4em;
-  height: 1.4em;
-
+  width: 1.6em;
+  height: auto;
     &.icon-github {
       content: url("../assets/icon-github.png");
     }
@@ -17,5 +16,8 @@
 
     &.icon-stackoverflow {
       content: url("../assets/icon-stackoverflow.png");
+    }
+    &.icon-linkedin {
+      content: url("../assets/icon-linkedin.png");
     }
 }
