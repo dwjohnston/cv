@@ -22,3 +22,10 @@ then:
 
 Feel free to use this for your own purposes. 
 
+## Some gotchas
+
+Make sure you your browser set at zoom 100% when creating your HTML, otherwise the generated PDF won't match. 
+
+There is a bug on `<a>` tags, so I say just don't use them. See: https://github.com/peterdemartini/html5-to-pdf/issues/10
+
+There appears to be a bug where content within `<td>` tags loses it style, so as a work around, style `<span>` within `<td>` tags. 
