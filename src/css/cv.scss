@@ -95,8 +95,15 @@ footer {
 #education {
 
   li {
-    list-style-type: none;
     margin: 0.5em 0;
+  }
+}
+
+#portfolio {
+  .link {
+    margin-top: 0.76em;
+    display:block;
+    text-decoration: underline;
   }
 }
 
@@ -106,7 +113,11 @@ footer {
   }
 
   h3 {
-    margin-top: 0.4em;
+    margin-top: 0.6em;
+  }
+
+  h4 {
+    margin-top: 0.6em;
   }
 
   .experience-job-title {
