@@ -101,13 +101,22 @@ footer {
 
 #portfolio {
   .link {
-    margin-top: 0.76em;
     display:block;
     text-decoration: underline;
+    margin: 0.25em 0;
+  }
+
+  .column-right {
+    padding-left: 0.5em;
+  }
+
+  .column-left{
+    padding-right: 0.5 em;
   }
 }
 
 #experience {
+
   li {
     margin: 0.2em;
   }
@@ -122,12 +131,11 @@ footer {
 
   .experience-job-title {
     //font-style: italic;
-    margin-left: 0.6em;
     font-weight: bold;
-    font-size: 0.9em;
   }
 
   .experience-time-period {
-    font-size: 0.9em;
   }
+
+
 }

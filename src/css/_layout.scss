@@ -58,13 +58,21 @@ div.body {
 
 }
 
+.page-inner>section {
+  margin: 0.5em 0;
+}
+
 section {
   border: solid 1px black;
 
-  padding: 1em;
+  padding: 0.7em;
 
   margin: 0.5em;
 
 
 
+}
+
+section:first-child{
+  flex: 1 0 auto;
 }

@@ -1,4 +1,7 @@
 
+
+
+
 table{
 
   margin-right: 1.5em;
@@ -15,8 +18,33 @@ table{
 
 
     span {
-      font-size: 0.9rem;
     }
   }
 
+}
+
+
+
+table.skills {
+
+  thead, .row-header {
+    font-weight: bold;
+  }
+
+  td {
+    text-align: right;
+    padding: 0 2em;
+  }
+
+  td:first-child{
+    text-align:left;
+  }
+
+  thead td {
+    padding-bottom: 2em;
+  }
+
+  td.row-header  {
+    padding-bottom: 0.5em;
+  }
 }
