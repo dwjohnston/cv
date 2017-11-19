@@ -108,10 +108,16 @@ footer {
 
   .column-right {
     padding-left: 0.5em;
+
+    align-self: flex-end;;
   }
 
   .column-left{
-    padding-right: 0.5 em;
+    padding-right: 0.5em;
+  }
+
+  span.link {
+    font-size: 0.95em;
   }
 }
 
