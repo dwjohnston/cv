@@ -22,6 +22,8 @@ then:
 
 Feel free to use this for your own purposes.
 
+The main html file to edit is `src/assets/extra.html`
+
 ## Some gotchas
 
 Make sure you your browser set at zoom 100% when creating your HTML, otherwise the generated PDF won't match.
