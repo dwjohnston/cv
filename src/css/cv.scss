@@ -31,6 +31,14 @@ header {
 
   display: flex;
   justify-content: space-between;
+
+  p:first-of-type {
+    margin-top: 2em;
+  }
+
+  p:last-of-type {
+    font-size: 0.8em;
+  }
 }
 
 footer {
