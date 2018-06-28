@@ -28,3 +28,11 @@
       content: url("../assets/icon-instagram.png");
     }
 }
+
+.geoart {
+  content: url("../assets/geoart.png");
+  object-fit: contain; 
+
+  width: 15em; 
+  height: 15em;
+}
