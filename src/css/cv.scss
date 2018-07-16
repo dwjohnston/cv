@@ -13,7 +13,8 @@
 
 .page-inner {
   //border: solid 1px black;
-  margin: 1em;
+  //margin: 1em;
+  margin: 2px; 
 
   flex: 1 0 auto;
 
@@ -159,26 +160,37 @@ footer {
   h3 {
     margin-top: 0.6em;
     font-size: 1.2em;
+    text-decoration: underline;
   }
 
   h4 {
     margin-top: 0.6em;
   }
 
-  h3, .experience-job-title, .experience-time-period{
+  .experience-job-title, .experience-time-period{
     display: inline-block; 
   }
 
   .experience-job-title {
     //font-style: italic;
     font-weight: bold;
-    margin-left: 2em;
+    //margin-left: 2em;
  
   }
 
   .experience-time-period {
 
   }
+
+
+  &>div {
+    margin-bottom: 1em;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
 
 
   .column-left {
