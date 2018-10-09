@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --watch-content-base --open",
     "publish-html": "webpack && copyfiles -f ./src/assets/index.html ./dist ",
-    "publish-pdf": "npm run publish-html && node --harmony publish.js "           
+    "publish-pdf": "npm run publish-html && node --harmony publish.js "
   },
   "author": "",
   "license": "ISC",
@@ -16,21 +16,21 @@
     "jquery": "^3.2.1"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "copyfiles": "^1.2.0",
     "css-loader": "^0.28.4",
     "expose-loader": "^0.7.3",
     "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "^0.11.2",
     "html-loader": "^0.5.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.3",
     "open": "0.0.5",
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.2.0",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^1.16.5"
   }
 }
