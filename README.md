@@ -20,6 +20,8 @@ then:
 
 `npm run publish-pdf` - Publish the pdf
 
+Or `npm run publish-pdf my-cv.pdf` to give it your own filename. 
+
 Feel free to use this for your own purposes.
 
 The main html file to edit is `src/assets/extra.html`

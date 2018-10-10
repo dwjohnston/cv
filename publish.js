@@ -1,9 +1,13 @@
+const file = process.argv[2] || 'cv.pdf';
+console.log(process.argv);
+console.log(file);
+
 
 const HTMLToPDF = require('html5-to-pdf');
 const htmlToPDF = new HTMLToPDF({
   inputPath: './dist/index.html',
-  outputPath: './dist/cv13.pdf',
-  include:   [{
+  outputPath: './dist/' + file,
+  include: [{
     "type": "js",
     "filePath": "./dist/bundle.js"
   }, {
