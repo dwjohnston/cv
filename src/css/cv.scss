@@ -7,7 +7,7 @@
 @import "contact-details"; 
 
 .page {
- // border-color: red; // Use this to see safety margin;
+  border-color: red; // Use this to see safety margin;
   
 }
 
@@ -75,7 +75,7 @@ footer {
 
 #profile {
   display: grid; 
-  grid-template-columns: 65% auto; 
+  grid-template-columns: 55% auto; 
   grid-column-gap: 2em; 
 
 
@@ -152,15 +152,22 @@ footer {
 }
 
 #experience {
-
+  font-size: 0.95em;
   li {
     margin: 0.2em;
+  }
+
+  p, h4 {
+    margin-left: 0.5em;
   }
 
   h3 {
     margin-top: 0.6em;
     font-size: 1.2em;
     text-decoration: underline;
+    display: inline; 
+    margin-right: 1em;
+    margin-bottom: 0.5em;
   }
 
   h4 {
@@ -168,7 +175,7 @@ footer {
   }
 
   .experience-job-title, .experience-time-period{
-    display: inline-block; 
+    display: inline; 
   }
 
   .experience-job-title {
@@ -179,7 +186,8 @@ footer {
   }
 
   .experience-time-period {
-
+    display:block;
+    margin-top: 0.4em;
   }
 
 
