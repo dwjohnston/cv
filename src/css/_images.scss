@@ -33,6 +33,6 @@
   content: url("../assets/geoart.png");
   object-fit: contain; 
 
-  width: 15em; 
-  height: 15em;
+  max-width: 100%; 
+  max-height: 100%; 
 }

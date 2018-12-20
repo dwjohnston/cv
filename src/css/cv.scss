@@ -7,7 +7,7 @@
 @import "contact-details"; 
 
 .page {
-  border-color: red; // Use this to see safety margin;
+  //border-color: red; // Use this to see safety margin;
   
 }
 
@@ -147,8 +147,10 @@ footer {
   }
 
   img {
-    margin: auto auto; 
+    align-self: center; 
   }
+
+
 }
 
 #experience {
@@ -163,7 +165,7 @@ footer {
 
   h3 {
     margin-top: 0.6em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-decoration: underline;
     display: inline; 
     margin-right: 1em;
@@ -187,7 +189,7 @@ footer {
 
   .experience-time-period {
     display:block;
-    margin-top: 0.4em;
+    margin-top: 0.6em;
   }
 
 
