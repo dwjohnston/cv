@@ -75,7 +75,7 @@ footer {
 
 #profile {
   display: grid; 
-  grid-template-columns: 55% auto; 
+  grid-template-columns: 50% auto; 
   grid-column-gap: 2em; 
 
 
@@ -103,11 +103,11 @@ footer {
 
 
     &:nth-child(odd) {
-      flex: 1 0 55%;
+      flex: 1 0 50%;
     }
 
     &:nth-child(even) {
-      flex: 0 0 40%;
+      flex: 0 0 45%;
     }
 
   }
