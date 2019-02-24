@@ -1,3 +1,5 @@
 require('./src/css/cv.scss');
+const index = require('./src/index.pug');
+//const pug = require('pug');
 
-document.write(require("./src/assets/extra.html"));
+document.write(index());

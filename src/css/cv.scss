@@ -1,215 +1,135 @@
 @import "a4";
-@import "images";
-@import "typography";
-@import "lists";
-@import "table";
-@import "layout";
-@import "contact-details"; 
 
 .page {
   //border-color: red; // Use this to see safety margin;
   
 }
 
-.page-inner {
-  //border: solid 1px black;
-  //margin: 1em;
-  margin: 2px; 
+html {
+  font-family: 'Roboto', sans-serif;
+}
 
-  flex: 1 0 auto;
+header, section {
+  padding: 0.5em; 
+  //border: dashed 1px black; 
+}
 
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+h1, h2, h3, h4, h5, h6, p  {
+  margin: 0.4em; 
+}
+
+section>ul {
+  margin: 0;
+  margin-left: 1em;
+}
+
+p, page>section>ul {
+  margin-left: 2em;
+}
+
+.link{
+  text-decoration: underline;
+}
+
+.tech-list {
+  font-style: italic; 
+}
+
+p.job-title {
+  font-weight: bold; 
+}
+
+
+
+h3 {
+  margin-left: 1em;
+}
+
+
+#page1 {
+  // display:grid; 
+
+  // grid-template-columns: auto 40%; 
+  // grid-template-rows: auto auto auto auto; 
+
+  // grid-template-areas: "header header" 
+  // "pfile skillset"
+  // "portfolio skillset";
+
 }
 
 header {
-  border-width: 1px;
-  border-color: black;
-  border-style: solid;
-
-  padding: 1em;
-
-  h1, h1+span {
-    text-align: center; 
-    display: block;
-  }
-
-  .contact-details {
-    margin-top: 1em;
-    margin-left: 2em;
-  }
-
-  p:last-of-type {
-    font-size: 0.8em;
-    padding-right: 2em;
-    margin-top: 1em;
-    margin-left: 5em;
-  }
-}
-
-footer {
-  border-width: 1px;
-  border-color: black;
-  border-style: solid;
-
-  padding: 1em;
-
-  display: flex;
+  grid-area: header;
+  display: flex; 
+  flex-flow: row nowrap; 
   justify-content: space-between;
 
-
-  .about {
-    flex: 0 0 20em;
+  &>div:first-child {
+    flex: 1 0 50%; 
   }
-
-  .github {
-
-
-    p {
-      margin-top: 1em;
-    }
-  }
-
 }
 
 #profile {
+  p {
+    font-size: 1.2em; 
+    line-height: 1.4em;
+    margin-right: 1em;
+  }
+}
+
+#skillset {
+  grid-area: skillset; 
   display: grid; 
-  grid-template-columns: 50% auto; 
-  grid-column-gap: 2em; 
-
-
-}
-
-#skill-set {
-  //Style inner lists
-&>div {
-
-  h3 {
-    margin: 0.3em 0;
-  }
-
-  padding-left: 0.4em;
-  display: flex;
-  flex-flow: row wrap;
-
+  grid-template-columns: 1fr 1fr 1fr; 
   section {
-
-    flex: 1 0 40%;
-
-    border: none;
-    padding: 0;
-    margin: 0;
-
-
-    &:nth-child(odd) {
-      flex: 1 0 50%;
+    padding: 0.25em;
+    &:last-child {
+      grid-column: span 3; 
+      &>* {
+        display: block; 
+        margin: 0 auto; 
+        width: 75%;
+      }
+      p, h3 {
+        text-align: center; 
+      }
+      ul {
+        position: relative; 
+        left:5em; 
+        top: 1em; 
+      }
     }
-
-    &:nth-child(even) {
-      flex: 0 0 45%;
-    }
-
   }
+  h2 {
+    grid-column: span 3; 
   }
 
 }
 
-#education {
-
-  li {
-    margin: 0.5em 0;
+#socials {
+  .social {
+    margin-left: 3em; 
+    padding: 0.5em 0; 
+    display: flex; 
+    flex-flow: row nowrap;
+    &>*:first-child {
+      flex: 0 0 25%; 
+    }
   }
 }
 
 #portfolio {
-
-  display: grid; 
-  grid-template-columns: auto 35%;
-  .link {
-    display:block;
-    text-decoration: underline;
-    margin: 0.25em 0;
-  }
-
-  .column-right {
-    padding-left: 0.5em;
-
-    align-self: flex-end;;
-  }
-
-  .column-left{
-    padding-right: 0.5em;
-  }
-
-  span.link {
-    font-size: 0.95em;
-  }
-
-  img {
-    align-self: center; 
-  }
-
-
-}
-
-#experience {
-  font-size: 0.95em;
-  li {
-    margin: 0.2em;
-  }
-
-  p, h4 {
-    margin-left: 0.5em;
-  }
-
-  h3 {
-    margin-top: 0.6em;
-    font-size: 1.4em;
-    text-decoration: underline;
-    display: inline; 
-    margin-right: 1em;
-    margin-bottom: 0.5em;
-  }
-
-  h4 {
-    margin-top: 0.6em;
-  }
-
-  .experience-job-title, .experience-time-period{
-    display: inline; 
-  }
-
-  .experience-job-title {
-    //font-style: italic;
-    font-weight: bold;
-    //margin-left: 2em;
- 
-  }
-
-  .experience-time-period {
-    display:block;
-    margin-top: 0.6em;
-  }
-
-
-  &>div {
-    margin-bottom: 1em;
-
-    &:last-of-type{
-      margin-bottom: 0;
+  &>section {
+    h3 {
+      margin-left: 0
     }
   }
-
-
-
-  .column-left {
-    flex: 0 0 50%; 
+  h3 ~* {
+    margin-left: 1em;
   }
 
-  .column-right {
-    margin-left: 1.5em;
-    flex: 1 0 40%;
+  p {
+    margin-left: 2em;
   }
-
+ 
 }
