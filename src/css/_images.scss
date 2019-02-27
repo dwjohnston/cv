@@ -1,0 +1,29 @@
+.icon {
+    width: 1.6em;
+    height: 1.6em;
+    
+      &.icon-github {
+        content: url("../assets/icon-github.png");
+      }
+  
+      &.icon-phone {
+        content: url("../assets/icon-phone.png");
+      }
+  
+      &.icon-email {
+        content: url("../assets/icon-email.png");
+      }
+  
+      &.icon-stackoverflow {
+        content: url("../assets/icon-stackoverflow.png");
+      }
+      &.icon-linkedin {
+        content: url("../assets/icon-linkedin.png");
+      }
+      &.icon-twitter {
+        content: url("../assets/icon-twitter-black.png");
+      }
+      &.icon-medium {
+        content: url("../assets/icon-medium.png");
+      }
+  }

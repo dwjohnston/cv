@@ -1,12 +1,13 @@
 @import "a4";
+@import "images";
 
 .page {
-  //border-color: red; // Use this to see safety margin;
-  
+  //border-color: red; // Use this to see safety margin;  
 }
 
 html {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px; 
 }
 
 header, section {
@@ -15,20 +16,30 @@ header, section {
 }
 
 h1, h2, h3, h4, h5, h6, p  {
-  margin: 0.4em; 
+  margin: 0.4rem 0; 
 }
 
-section>ul {
-  margin: 0;
-  margin-left: 1em;
+.page {
+  section, header, footer {
+    &>h2, &>h3 {
+      & ~ * {
+        margin-left: 1em;
+      }
+    }
+
+    h3 ~ p {
+      margin-left: 2em;
+    }
+
+    h4 ~ p {
+      margin-left: 2em; //I'm probably getting a little clever for my own good here. This rule is used in the portfolio section to get the ps to ident
+    }
+  }
 }
 
-p, page>section>ul {
-  margin-left: 2em;
-}
 
 .link{
-  text-decoration: underline;
+  //text-decoration: underline; //Underlines don't render very well.
 }
 
 .tech-list {
@@ -39,25 +50,6 @@ p.job-title {
   font-weight: bold; 
 }
 
-
-
-h3 {
-  margin-left: 1em;
-}
-
-
-#page1 {
-  // display:grid; 
-
-  // grid-template-columns: auto 40%; 
-  // grid-template-rows: auto auto auto auto; 
-
-  // grid-template-areas: "header header" 
-  // "pfile skillset"
-  // "portfolio skillset";
-
-}
-
 header {
   grid-area: header;
   display: flex; 
@@ -66,6 +58,14 @@ header {
 
   &>div:first-child {
     flex: 1 0 50%; 
+  }
+}
+
+#availability {
+  border: solid 1px black;
+  padding: 0.2em;
+  h2 {
+    text-align: center; 
   }
 }
 
@@ -80,56 +80,41 @@ header {
 #skillset {
   grid-area: skillset; 
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
   section {
     padding: 0.25em;
+    grid-column: span 2; 
     &:last-child {
-      grid-column: span 3; 
-      &>* {
-        display: block; 
-        margin: 0 auto; 
-        width: 75%;
-      }
+      grid-column: 2 /span 4; 
       p, h3 {
         text-align: center; 
-      }
-      ul {
-        position: relative; 
-        left:5em; 
-        top: 1em; 
       }
     }
   }
   h2 {
-    grid-column: span 3; 
+    grid-column: span 6; 
   }
 
 }
 
 #socials {
   .social {
-    margin-left: 3em; 
-    padding: 0.5em 0; 
     display: flex; 
     flex-flow: row nowrap;
-    &>*:first-child {
-      flex: 0 0 25%; 
+    align-items: center; 
+    padding: 0.5em;
+    img {
+      margin-right: 1em; 
     }
+
   }
 }
-
-#portfolio {
-  &>section {
-    h3 {
-      margin-left: 0
-    }
-  }
-  h3 ~* {
-    margin-left: 1em;
+#employment {
+  h3:not(:first-of-type) {
+    margin-top: 1em;     
   }
 
-  p {
-    margin-left: 2em;
+  .job-title ~ p:not(.job-title), ul {
+    margin-left: 3em; 
   }
- 
 }
