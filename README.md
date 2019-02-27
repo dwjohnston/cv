@@ -8,6 +8,8 @@ Uses [html5-to-pdf](https://github.com/peterdemartini/html5-to-pdf) a pretty han
 
 There are quite a few html to pdf converters out there, but I found a lot of them are either very expensive, or they don't support HTML5/flexbox.
 
+It uses Pug as the templating engine. 
+
 ## Usage
 
 `npm install`
@@ -24,7 +26,7 @@ Or `npm run publish-pdf my-cv.pdf` to give it your own filename.
 
 Feel free to use this for your own purposes.
 
-The main html file to edit is `src/assets/extra.html`
+The main html file to edit is `src/index.pug`
 
 ## Some gotchas
 
