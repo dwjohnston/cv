@@ -3,11 +3,12 @@
 
 .page {
   //border-color: red; // Use this to see safety margin;  
+  //border: solid 1px black; 
 }
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px; 
+  font-size: 14px; 
 }
 
 header, section {
@@ -62,16 +63,18 @@ header {
 }
 
 #availability {
-  border: solid 1px black;
+  //border: solid 1px black;
   padding: 0.2em;
+  margin-top: 1em; 
   h2 {
     text-align: center; 
+    font-size: 1.2em; 
   }
 }
 
 #profile {
   p {
-    font-size: 1.2em; 
+    font-size: 1em; 
     line-height: 1.4em;
     margin-right: 1em;
   }
@@ -116,5 +119,16 @@ header {
 
   .job-title ~ p:not(.job-title), ul {
     margin-left: 3em; 
+  }
+}
+
+#education {
+  display: flex; 
+  flex-flow: row wrap; 
+  h2 {
+    flex: 1 0 100%; 
+  }
+  div {
+
   }
 }
