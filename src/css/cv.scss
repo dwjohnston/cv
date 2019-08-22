@@ -1,9 +1,10 @@
 @import "a4";
 @import "images";
-
+@import "mui"; 
 .page {
   //border-color: red; // Use this to see safety margin;  
   //border: solid 1px black; 
+  @extend .mui-panel
 }
 
 html {
@@ -64,6 +65,7 @@ header {
 
 #availability {
   //border: solid 1px black;
+  display: none; //
   padding: 0.2em;
   margin-top: 1em; 
   h2 {
@@ -81,22 +83,7 @@ header {
 }
 
 #skillset {
-  grid-area: skillset; 
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  section {
-    padding: 0.25em;
-    grid-column: span 2; 
-    &:last-child {
-      grid-column: 2 /span 4; 
-      p, h3 {
-        text-align: center; 
-      }
-    }
-  }
-  h2 {
-    grid-column: span 6; 
-  }
+  max-width: 50%; 
 
 }
 
@@ -113,13 +100,20 @@ header {
   }
 }
 #employment {
-  h3:not(:first-of-type) {
-    margin-top: 1em;     
+  h3 {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-top: 0.8em; 
+      margin-bottom: 0; 
+    }
+    & + p.date {
+      display: inline; 
+      margin-left: 1em; 
+      vertical-align: text-bottom;  
+
+    }
   }
 
-  .job-title ~ p:not(.job-title), ul {
-    margin-left: 3em; 
-  }
 }
 
 #education {

@@ -1,3 +1,13 @@
+mixin techlist()
+    table
+        thead
+            tr
+                th Frontend
+                th Backend
+                th Infrastructure
+                th Tooling
+        tbody
+            block
 
 div.page#page1 
     header
@@ -22,100 +32,46 @@ div.page#page1
         p I like TypeScript and statically typed languages - as I find they prevent bugs before they occur, and force the developer to think about their design as they write their code. 
 
     section#skillset 
-        h2 Skillset / Techstack
+        h2 Core Skillset
 
-        section 
-            h3 Frontend
-            ul 
-                li.strong React
-                    ul 
-                        li react-router
-                        li react-redux
-                li.strong Redux
-                    ul 
-                        li redux-thunk
-                        li redux-saga
-                        li redux-persist
-                li.strong Material-UI
-                li.strong Semantic HTML
-                li.strong CSS
-                    ul 
-                        li.strong SCSS
-                        li.strong CSS-in-JS (JSS)
-        section 
-            h3 General JavasScript
-            ul 
-                li.strong TypeScript
-                li.strong ES5
-                li.strong ES6+
-                li.strong Jest
+        p This is what I'm best at
 
-            h3 Backend
-            ul 
-                li.strong NodeJs
-                    ul 
-                        li Express
-                li.strong Java (7/8)
-   
+        ul 
+            li JavaScript (ES5/ES6+)
+            li TypeScript
+            li React
+            li Redux (Thunk/Saga)
+            li Jest
+            li CSS (Vanilla, Sass, CSS-in-JS)
+            li NodeJs
+            li Docker
 
-                li.medium SQL
-                li.medium Mongo
 
-        section 
-            h3 Dev/Ops/Tooling
-            ul 
-                li.medium Webpack
-                li.medium RollUp
-                li.medium Git
-                li.strong ESLint
-                li.medium TypeScript
-                li.strong Deployments
-                    ul
-                        li Heroku
-                        li Firebase
-                        li Netlify
-                        li Kubernetes
-                li.medium Docker
-                li.medium CI/CD 
-                    ul 
-                        li TravisCI
-                        li GitlabCI
-
-        section
-            h3 On The Radar
-            p These are technologies I do not have particularly strong experience in, but am interested in pursuing further. 
-            ul 
-                li GraphQL
-                li Static Site Generators (Gatsby/NextJS/Webpack plugins)
-                li CDNs
-                li Web Components
-                li Web Assembly
-                li VueJs
-                li HTML5 APIs
 
 div.page
     section#employment
         h2 Employment History 
 
-        h3 460 Degress - March 2019 - June 2019 
+        h3 460 Degress 
+        p.date March 2019 - June 2019 
 
         p.job-title Contract Senior Software Engineer
 
         p Responsible for creating a proof of concept that demonstrates the issuing and then sharing of a credential, using the Self Sovreign Identity technology LibIndy/Indy-Hyperledger
 
-        p This involved creating two fairly simple CRUD web applications, and integrating them with an Express API wrapper around the LibIndy Node SDK. 
+        p.tech-list React/Redux/Redux-Saga/TypeScript/Material-UI/JSS/NodeJs/Express/Docker/Webpack/GCP
 
-        p.tech-list React/Redux/Redux-Saga/TypeScript/Material-UI/Lerna/Docker/LibIndy/Express/GCP
-
-        h3 Telstra - November 2018 - March 2019 
+        h3 Telstra
+        p.date November 2018 - March 2019 
 
         p.job-title Senior Cloud Engineer contracted via Oreta Pty Ltd. 
 
         p Responsible for creating features for and maintaining an internal service order application. 
 
-        p.tech-list React/Redux/Redux-Saga/AntD/Jest/Docker/Kubernetes
+        p.tech-list React/Redux/Redux-Saga/JavaScript/AntD/Jest/Docker
 
-        h3 DreamWalk - August 2018 - November 2018
+        h3 DreamWalk 
+        p.date August 2018 - November 2018
 
         p.job-title Contract Web Developer
 
@@ -123,11 +79,12 @@ div.page
             strong Portfolio: 
             span https://myfootprint.socialfootprintindex.org/login
 
-        p Sole charge responsible for building the frontend of this social footprint application over eight weeks. 
+        p Sole charge responsible for building the frontend of this social footprint application over eight weeks.
+   
+        p.tech-list React/Redux/Redux-Thunk/JavaScript/Material-UI/JSS/Heroku
 
-        p.tech-list React/Redux/Redux-Thunk/Material-UI/JSS/Heroku
-
-        h3 Perplexico May 2018 - August 2018
+        h3 Perplexico 
+        p.date May 2018 - August 2018
 
         p.job-title Casual Contract Web Developer
 
@@ -135,23 +92,19 @@ div.page
 
         p.tech-list Angular/RxJs/Firebase
 
-        h3 Datacom - August 2016 - April 2018
+        h3 Datacom 
+        p.date August 2016 - April 2018
 
         p.job-title Intermediate Java Developer
 
-        p.link 
-            strong Portfolio: 
-            span https://www1.logon.realme.govt.nz/cls/logon.logon
-
         ul 
-            li Responsible for a mobile responsive reskin of the RealMe digital identity platform. 
-            li Added features for a single-sign-on service for teachers. 
+            li Responsible for a mobile responsive reskin of the RealMe digital identity platform, and other feature work. 
             li Created a proof of concept example of how we might implement our existing tech stack on a Kubernetes cluster.
-            li Created a proof of concept series of web applications using the Indy Hyperledger blockchain digital identity solution, by creating a Python based web APIs, and React frontends. 
 
         p.tech-list Java/CSS/Javascript/JQuery/Bash/Docker/Kubernetes
 
-        h3 Inland Revenue - January 2013 - August 2016
+        h3 Inland Revenue 
+        p.date January 2013 - August 2016
 
         p.job-title Intelligence Analyst
 
@@ -161,6 +114,10 @@ div.page
 
         p.tech-list SAS/XSLT/Python/Java/AngularJS/CSS
 
+
+
+
+div.page
 
     section#education
         h2 Education
@@ -173,26 +130,8 @@ div.page
             p Otago University, New Zealand, 2007
             p Philosophy major
 
-div.page
     section#portfolio
         h2 Portfolio
-        section 
-            h3 Generative Art
-
-            p The following are some generative art projects I've done for fun: 
-
-            h4.link https://geoplanets.io 
-
-            p This was my first main React project. This project was invaluable in teaching me the end to end solution of creating a web application and structuring a React application. 
-
-            h4.link https://tinymassive.herokuapp.com/ 
-
-            p This is my accepted submission for the Reykjavik Winter Lights Festival in Iceland in 2019. Users controlled a building covered in lights, via the website. See more details here: 
-                span.link https://tinymassive.io/. 
-
-            h4.link https://video-geoplanets.herokuapp.com/
-
-            p This is a proof of concept submission for White Night Melbourne 2019. The concept is the animation is controlled by a web cam. 
         section 
             h3 Presentations
 
@@ -232,7 +171,7 @@ div.page
     section#about
         h2 About this CV
         p This is an HTML CV. 
-        p It's using the pug templating engine, and renders to PDF via a library called html5-to-pdf. 
+        p It's using the pug templating engine, the muicss CSS library,  and renders to PDF via a library called html5-to-pdf. 
         p See the code here: 
             span.link https://github.com/dwjohnston/cv
 
