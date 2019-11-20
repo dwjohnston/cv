@@ -39,13 +39,22 @@ h1, h2, h3, h4, h5, h6, p  {
   }
 }
 
-
+.two-column {
+  display: flex; 
+  flex-flow: row nowrap; 
+  margin: 0 auto; 
+  &>* {
+    flex: 0 0 auto; 
+  }
+}
 .link{
   //text-decoration: underline; //Underlines don't render very well.
 }
 
 .tech-list {
   font-style: italic; 
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
 }
 
 p.job-title {
@@ -83,7 +92,6 @@ header {
 }
 
 #skillset {
-  max-width: 50%; 
 
 }
 
