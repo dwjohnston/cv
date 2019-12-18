@@ -15,7 +15,10 @@ html {
 header, section {
   padding: 0.5em; 
   //border: dashed 1px black; 
+
+
 }
+
 
 h1, h2, h3, h4, h5, h6, p  {
   margin: 0.4rem 0; 
@@ -63,12 +66,11 @@ p.job-title {
 
 header {
   grid-area: header;
-  display: flex; 
-  flex-flow: row nowrap; 
-  justify-content: space-between;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
 
-  &>div:first-child {
-    flex: 1 0 50%; 
+  #email {
+    text-align: right;
   }
 }
 
@@ -109,15 +111,13 @@ header {
 }
 #employment {
   h3 {
-    display: inline-block;
+    display: inline;
     &:not(:first-child) {
-      margin-top: 0.8em; 
       margin-bottom: 0; 
     }
     & + p.date {
       display: inline; 
       margin-left: 1em; 
-      vertical-align: text-bottom;  
 
     }
   }
