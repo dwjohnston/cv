@@ -55,8 +55,8 @@ h1, h2, h3, h4, h5, h6, p  {
 }
 
 .tech-list {
-  font-style: italic; 
-  font-size: 1.05em;
+  font-weight: 700; 
+  font-size: 0.85em;
   letter-spacing: 0.02em;
 }
 
@@ -111,12 +111,13 @@ header {
 }
 #employment {
   h3 {
-    display: inline;
+    margin-top: 1em; 
+    display: inline-block;
     &:not(:first-child) {
       margin-bottom: 0; 
     }
     & + p.date {
-      display: inline; 
+      display: inline-block; 
       margin-left: 1em; 
 
     }
