@@ -9,7 +9,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px; 
+  font-size: 12px; 
 }
 
 header, section {
@@ -109,6 +109,11 @@ header {
 
   }
 }
+
+#socials, #about {
+  font-size: 0.8em; 
+}
+
 #employment {
   h3 {
     margin-top: 1em; 
