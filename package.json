@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "html5-to-pdf": "^2.2.4",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
