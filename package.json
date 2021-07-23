@@ -24,7 +24,7 @@
     "file-loader": "^0.11.2",
     "html-loader": "^0.5.1",
     "node-sass": "^4.11.0",
-    "open": "0.0.5",
+    "open": "6.0.0",
     "pug-loader": "^2.4.0",
     "resolve-url-loader": "^2.3.2",
     "sass-loader": "^6.0.6",
